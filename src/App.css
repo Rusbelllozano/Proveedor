@@ -1,32 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Staatliches');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
 .App {
+  width: 100%;
   text-align: center;
 }
-
+.App-wave {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  width: 200px;
 }
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  /* background-color: #282c34; */
+  display: grid;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
+}
+.hero {
+  height: 380px;
+}
+.hero__title {
+  font-family: 'Staatliches', cursive;
+  color: #fff;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+.hero__details {
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.brands {
+  width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.brands__separator {
+  width: 100%;
+  height: 1px;
+  position: relative;
+}
+.brands__separator::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  height: 1px;
+  background-color: red;
+}
+.brands__separator::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 50%;
+  height: 1px;
+  background-color: blue;
+}
+.brands__list {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px;
+  list-style: none;
+}
+.brands__item__img {
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.5;
 }
