@@ -1,0 +1,24 @@
+.separator {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.separator p {
+  font-size: 14px;
+  color: rgba(40, 44, 54, 0.4);
+  font-weight: bold;
+  margin: 0 1rem;
+}
+.separator hr {
+  border-style: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #dddddd;
+}
+.separator hr:first-child {
+  width: 100%;
+  justify-self: end;
+}

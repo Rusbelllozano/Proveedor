@@ -1,0 +1,21 @@
+<svg width="471px" height="309px" viewBox="0 0 471 309" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path d="M279,308 C146.587823,307.785854 19.130402,317.491931 3,206 C-15.0201577,75.6167956 39.9627466,-40.5357318 197,14 C329.55635,59.5638385 470,34.0458062 470,181 C470,288.22563 394.749915,307.785854 279,308 Z" id="path-1"></path>
+</defs>
+<g id="Product" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Visitors" transform="translate(-206.000000, -1058.000000)">
+<g id="What-happens-when-a-visitor-arrives" transform="translate(206.000000, 945.000000)">
+<g id="Video" transform="translate(0.000000, 113.000000)">
+<g id="Mask">
+<mask id="mask-2" fill="white">
+<use xlink:href="#path-1"></use>
+</mask>
+<clipPath id="videoMaskClipPath">
+<use fill="#F6F6F7" transform="translate(235.000000, 154.000000) scale(-1, 1) translate(-235.000000, -154.000000) " xlink:href="#path-1"></use>
+</clipPath>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

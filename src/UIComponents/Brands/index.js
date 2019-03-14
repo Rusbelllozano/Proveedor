@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-
+import "./index.css"
 const Brands = props => {
-  const listItems = props.brands.map(brand => (
-    <li className="brands__item">
+  const listItems = props.brands.map((brand, index) => (
+    <li className="brands__item" key={`brand${index}`}>
       <img src={brand.url} className="brands__item__img" />
     </li>
   ));
