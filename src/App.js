@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
-import Wave from './assets/wave-alt.svg';
+import Wave, { ReactComponent } from './assets/wave-alt.svg';
 import Logo from './assets/logo.png';
+// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
 import Separator from './UIComponents/Separator';
 import Brands from './UIComponents/Brands';
-import Magic from './Icons/Magic';
 // import Mask from './assets/mask.svg';
 class App extends Component {
   render() {
+    // function Index() {
+    //   return <h2>Home</h2>;
+    // }
+    // function Users() {
+    //   return <h2>Users</h2>;
+    // }
     const svgReactElement = (
       <svg
         width="471px"
@@ -108,19 +114,19 @@ class App extends Component {
         title: 'Los mejores precios del mercado',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-        icon: require('./Icons/Magic.js')
+        icon: require('./Icons/Magic.svg')
       },
       {
         title: 'Los mejores precios del mercado',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-        icon: require('./Icons/Magic.js')
+        icon: require('./Icons/Time.svg')
       },
       {
         title: 'Los mejores precios del mercado',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-        icon: require('./Icons/Magic.js')
+        icon: require('./Icons/Quality.svg')
       }
     ];
     return (
@@ -130,10 +136,19 @@ class App extends Component {
           <img src={Wave} className="App-wave" alt="wave" />
         </header>
         <section className="hero">
+        
           <h2 className="hero__title">
             Una nueva manera de <br />
             mercar tu hogar
           </h2>
+          {/* <Router>
+          <Link to="/">Users</Link>
+          <Route path="/" exact component={Index} />
+          <div>
+          <Link to="/users">Users</Link>
+          </div>
+          <Route path="/users" exact component={Users} />
+          </Router> */}
           <p className="hero__details">
             Tenemos infinidad de productos que podrias disfrutar
           </p>
@@ -173,7 +188,7 @@ class App extends Component {
                   <li className="features__item" key={`feature${index}`}>
                     <h3>{feature.title}</h3>
                     <p>{feature.description}</p>
-                    {Magic}
+                    <img className="feature_icons" src={feature.icon}/>
                   </li>
                 );
               })}
